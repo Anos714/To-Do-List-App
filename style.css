@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  background: linear-gradient(100deg, #ff5945, #002765);
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 50px;
+
+  gap: 15rem;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 370px;
+  -webkit-box-shadow: -8px 3px 30px 4px rgba(0, 0, 0, 1);
+  -moz-box-shadow: -8px 3px 30px 4px rgba(0, 0, 0, 1);
+  box-shadow: -8px 3px 30px 4px rgba(0, 0, 0, 1);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 20px 20px;
+  gap: 1rem;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.todo-app h2 {
+  color: #002765;
+  font-weight: 900;
+}
+
+.input-section {
+  display: flex;
+}
+
+.todo-app input {
+  height: 45px;
+  width: 250px;
+  border-radius: 30px 0px 0px 30px;
+  border: none;
+  outline: none;
+  padding-left: 15px;
+  background: #edeef0;
+}
+
+.todo-app button {
+  border: none;
+  height: 45px;
+  width: 70px;
+  border-radius: 0px 30px 30px 0px;
+  background-color: #ff5945;
+}
+
+ul li {
+  list-style: none;
+  font-size: 1rem;
+  padding: 12px 8px 12px 40px;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  background-image: url("To-Do-Img/images/unchecked.png");
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+
+ul li.checked {
+  text-decoration: line-through;
+  color: #555;
+}
+
+ul li.checked::before {
+  background-image: url("To-Do-Img/images/checked.png");
+}
+
+ul li span {
+  position: absolute;
+  right: 0px;
+
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+
+  line-height: 40px;
+}
+
+.footer h2 {
+  text-align: center;
+}
