@@ -19,7 +19,7 @@ A simple and responsive To-Do List application built using **HTML**, **CSS**, an
 
 ## 📸 Screenshots
 
-> _![Thumbnail](images/Screenshot)_
+> _![Thumbnail](images/Screenshot 2025-07-02 210152.png)_
 
 ## 📂 How to Run
 
